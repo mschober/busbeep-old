@@ -1,2 +1,10 @@
 *.pyc
 logs/
+coverage.sh
+init-db.sh
+kill.sh
+link-shortcuts.sh
+run.sh
+test.sh
+unlink-shortcuts.sh
+view.sh
