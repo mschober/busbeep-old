@@ -27,4 +27,5 @@ main/static/pylons.css
 main/static/pyramid-small.png
 main/static/pyramid.png
 main/static/transparent.gif
+main/templates/busbeeps_first.pt
 main/templates/mytemplate.pt

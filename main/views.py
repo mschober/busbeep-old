@@ -16,6 +16,15 @@ def my_view(request):
         return Response(conn_err_msg, content_type='text/plain', status_int=500)
     return {'one':one, 'project':'main'}
 
+@view_config(route_name='busbeep', renderer='templates/busbeeps_first.pt')
+def busbeeps_first(request):
+    try:
+        one = DBSession.query(MyModel).filter(MyModel.name=='one').first()
+    except DBAPIError:
+        return Response(conn_err_msg, content_type='text/plain', status_int=500)
+    return {'one':one, 'project':'main'}
+
+
 conn_err_msg = """\
 Pyramid is having a problem using your SQL database.  The problem
 might be caused by one of the following things:
