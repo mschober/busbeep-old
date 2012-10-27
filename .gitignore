@@ -1,5 +1,6 @@
 logs/
 *.pyc
+main.egg*
 
 coverage.sh
 init-db.sh
