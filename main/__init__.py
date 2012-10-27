@@ -1,7 +1,7 @@
 from pyramid.config import Configurator
 from sqlalchemy import engine_from_config
 
-from .src.models import (
+from .src.model.models import (
     DBSession,
     Base,
     )

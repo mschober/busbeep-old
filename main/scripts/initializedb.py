@@ -9,7 +9,7 @@ from pyramid.paster import (
     setup_logging,
     )
 
-from ..src.models import (
+from ..src.model.models import (
     DBSession,
     MyModel,
     Base,

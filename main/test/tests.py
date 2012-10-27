@@ -3,14 +3,14 @@ import transaction
 
 from pyramid import testing
 
-from ..src.models import DBSession
+from ..src.model.models import DBSession
 
 class ViewBaseTest(unittest.TestCase):
     def setUp(self):
         self.config = testing.setUp()
         from sqlalchemy import create_engine
         engine = create_engine('sqlite://')
-        from ..src.models import (
+        from ..src.model.models import (
             Base,
             MyModel,
             )
