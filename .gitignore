@@ -11,3 +11,4 @@ test.sh
 unlink-shortcuts.sh
 view.sh
 decompile.sh
+tree.sh
