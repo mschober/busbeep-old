@@ -1,4 +1,4 @@
-from ..tests import ViewBaseTest, testing
+from tests import ViewBaseTest, testing
 
 class TestRouteView(ViewBaseTest):
     def test_example(self):
