@@ -30,10 +30,3 @@ class TestMyView(unittest.TestCase):
         info = my_view(request)
         self.assertEqual(info['one'].name, 'one')
         self.assertEqual(info['project'], 'main')
-
-    def test_it(self):
-        from .views import busbeeps_first
-        request = testing.DummyRequest()
-        info = busbeeps_first(request)
-        self.assertEqual(info['one'].name, 'one')
-        self.assertEqual(info['project'], 'main')
